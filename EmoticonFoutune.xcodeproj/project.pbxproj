@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7866184D1CAA93AE00392D2C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7866184C1CAA93AE00392D2C /* Default.png */; };
 		78CB2BFE1C9A3C480065F4D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CB2BFD1C9A3C480065F4D4 /* AppDelegate.swift */; };
 		78CB2C001C9A3C480065F4D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CB2BFF1C9A3C480065F4D4 /* ViewController.swift */; };
 		78CB2C031C9A3C480065F4D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78CB2C011C9A3C480065F4D4 /* Main.storyboard */; };
-		78CB2C061C9A3C480065F4D4 /* EmoticonFoutune.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78CB2C041C9A3C480065F4D4 /* EmoticonFoutune.xcdatamodeld */; };
 		78CB2C081C9A3C480065F4D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78CB2C071C9A3C480065F4D4 /* Assets.xcassets */; };
 		78CB2C0B1C9A3C480065F4D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78CB2C091C9A3C480065F4D4 /* LaunchScreen.storyboard */; };
+		78CB2C131C9A63C80065F4D4 /* ResultList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78CB2C121C9A63C80065F4D4 /* ResultList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7866184C1CAA93AE00392D2C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		78CB2BFA1C9A3C480065F4D4 /* EmoticonFoutune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmoticonFoutune.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78CB2BFD1C9A3C480065F4D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78CB2BFF1C9A3C480065F4D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		78CB2C021C9A3C480065F4D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		78CB2C051C9A3C480065F4D4 /* EmoticonFoutune.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EmoticonFoutune.xcdatamodel; sourceTree = "<group>"; };
 		78CB2C071C9A3C480065F4D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78CB2C0A1C9A3C480065F4D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78CB2C0C1C9A3C480065F4D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78CB2C121C9A63C80065F4D4 /* ResultList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ResultList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7866184E1CAB6E5900392D2C /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
 		78CB2BF11C9A3C480065F4D4 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +65,41 @@
 		78CB2BFC1C9A3C480065F4D4 /* EmoticonFoutune */ = {
 			isa = PBXGroup;
 			children = (
+				7866184E1CAB6E5900392D2C /* Library */,
 				78CB2BFD1C9A3C480065F4D4 /* AppDelegate.swift */,
-				78CB2BFF1C9A3C480065F4D4 /* ViewController.swift */,
-				78CB2C011C9A3C480065F4D4 /* Main.storyboard */,
-				78CB2C071C9A3C480065F4D4 /* Assets.xcassets */,
-				78CB2C091C9A3C480065F4D4 /* LaunchScreen.storyboard */,
+				78CB2C1A1C9BB7D40065F4D4 /* Resource */,
+				78CB2C191C9BB7BB0065F4D4 /* Storyboard */,
+				78CB2C181C9BB7990065F4D4 /* ViewController */,
 				78CB2C0C1C9A3C480065F4D4 /* Info.plist */,
-				78CB2C041C9A3C480065F4D4 /* EmoticonFoutune.xcdatamodeld */,
 			);
 			path = EmoticonFoutune;
+			sourceTree = "<group>";
+		};
+		78CB2C181C9BB7990065F4D4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				78CB2BFF1C9A3C480065F4D4 /* ViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		78CB2C191C9BB7BB0065F4D4 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				78CB2C011C9A3C480065F4D4 /* Main.storyboard */,
+				78CB2C091C9A3C480065F4D4 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		78CB2C1A1C9BB7D40065F4D4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				78CB2C071C9A3C480065F4D4 /* Assets.xcassets */,
+				78CB2C121C9A63C80065F4D4 /* ResultList.plist */,
+				7866184C1CAA93AE00392D2C /* Default.png */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +134,7 @@
 				TargetAttributes = {
 					78CB2BF91C9A3C480065F4D4 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 754PAN7XK5;
 					};
 				};
 			};
@@ -126,8 +162,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				78CB2C0B1C9A3C480065F4D4 /* LaunchScreen.storyboard in Resources */,
+				78CB2C131C9A63C80065F4D4 /* ResultList.plist in Resources */,
 				78CB2C081C9A3C480065F4D4 /* Assets.xcassets in Resources */,
 				78CB2C031C9A3C480065F4D4 /* Main.storyboard in Resources */,
+				7866184D1CAA93AE00392D2C /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +177,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				78CB2C001C9A3C480065F4D4 /* ViewController.swift in Sources */,
-				78CB2C061C9A3C480065F4D4 /* EmoticonFoutune.xcdatamodeld in Sources */,
 				78CB2BFE1C9A3C480065F4D4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,10 +290,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = EmoticonFoutune/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.futurescope.EmoticonFoutune;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -264,10 +304,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = EmoticonFoutune/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.futurescope.EmoticonFoutune;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -290,21 +333,9 @@
 				78CB2C111C9A3C480065F4D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		78CB2C041C9A3C480065F4D4 /* EmoticonFoutune.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				78CB2C051C9A3C480065F4D4 /* EmoticonFoutune.xcdatamodel */,
-			);
-			currentVersion = 78CB2C051C9A3C480065F4D4 /* EmoticonFoutune.xcdatamodel */;
-			path = EmoticonFoutune.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 78CB2BF21C9A3C480065F4D4 /* Project object */;
 }
